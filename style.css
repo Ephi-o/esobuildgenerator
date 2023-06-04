@@ -16,13 +16,13 @@ body
 }
 @font-face {
     font-family: ESO;
-    src: url(../Ressources/FOnt/Fontin_Sans_B_45b.otf);
+    src: url(./Ressources/FOnt/Fontin_Sans_B_45b.otf);
 }
 /* ---------------------------------UPPER DOC------------------------------------------------- */
 
 #nav_bar
 {
-    background-image: url(../Ressources/loadscreen_topmunge_tile.png);
+    background-image: url(./Ressources/loadscreen_topmunge_tile.png);
     background-size: cover;
     width: 100vw;
     height: 50vh;
@@ -46,7 +46,7 @@ nav
 }
 #layout
 {
-    background-image: url(../Ressources/HuD/battlegrounds_scoreboardbg_left.png);
+    background-image: url(./Ressources/HuD/battlegrounds_scoreboardbg_left.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 25%;
@@ -78,7 +78,7 @@ nav
 #selection li
 {
     list-style: none;    
-    background-image: url(../Ressources/Champion\ points/actionbar/champion_constellation_bar_noirereduce.png);
+    background-image: url(./Ressources/Champion\ points/actionbar/champion_constellation_bar_noirereduce.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 17vw;
@@ -96,7 +96,7 @@ nav
 
 #footer_bar
 {
-    background-image: url(../Ressources/loadscreen_bottommunge_tile.png);
+    background-image: url(./Ressources/loadscreen_bottommunge_tile.png);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position-y: %; */
