@@ -91,7 +91,7 @@ left: 35vw;
     position: relative;}
 #mundus li img
 {
-    border-image: url("../../Ressources/HuD/abilityframe64_up.png") 30/50% 50%/2px;
+    border-image: url("../Ressources/HuD/abilityframe64_up.png") 30/50% 50%/2px;
 }
 
 /* //*!SECTION-Attributs */
@@ -169,7 +169,7 @@ left: 35vw;
 }
 #close_factions::after, #close_races::after, #close_mundus::after, #close_classes::after, #close_attributs::after
 {
-    content: url(../../Ressources/chat_scrollbar_downarrow_up.png);
+    content: url(../Ressources/chat_scrollbar_downarrow_up.png);
     position: relative;
     top : .5vh;
     left : .5vw;
@@ -177,7 +177,7 @@ left: 35vw;
 
 #close_factions.reduit::after, #close_races.reduit::after, #close_mundus.reduit::after, #close_classes.reduit::after, #close_attributs.reduit::after
 {
-    content: url(../../Ressources/chat_scrollbar_uparrow_up.png);
+    content: url(../Ressources/chat_scrollbar_uparrow_up.png);
     position: relative;
     top : .5vh;
     left : .5vw;
