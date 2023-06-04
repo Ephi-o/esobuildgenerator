@@ -1,0 +1,107 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --dark: rgb(52, 50, 44);
+    --light : #999999;
+    --text : rgb(196,201,156)
+}
+body
+{
+    background: var(--dark);
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: ESO;
+    src: url(../Ressources/FOnt/Fontin_Sans_B_45b.otf);
+}
+/* ---------------------------------UPPER DOC------------------------------------------------- */
+
+#nav_bar
+{
+    background-image: url(../Ressources/loadscreen_topmunge_tile.png);
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+    top: -25vh;
+    position: absolute;
+    pointer-events: none
+}
+nav
+{
+    z-index: 2;
+    height: 5vh;
+    position: relative;
+}
+
+/* ---------------------------------MID DOC------------------------------------------------- */
+#build_create
+{
+    position: relative;
+    top: -5vh;
+    height: 100vh;
+}
+#layout
+{
+    background-image: url(../Ressources/HuD/battlegrounds_scoreboardbg_left.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 25%;
+    width: 85vw;
+    height: 105vh;
+    z-index: 1;
+    position: relative;
+    left: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#layout_inner
+{
+    position: relative;
+    width: 65vw;
+    height: 100vh;
+    left: 2.5vw;
+}
+#selection
+{
+    position: absolute;
+    height: 105vh;
+    width: 15vw;
+    left: 5vw;
+    z-index: 2;
+    padding-top: 15vh;
+}
+#selection li
+{
+    list-style: none;    
+    background-image: url(../Ressources/Champion\ points/actionbar/champion_constellation_bar_noirereduce.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 17vw;
+    height: 4vh;
+    text-align: center;
+    font-family: ESO;
+    font-size: 2.5vh;
+    color: var(--text);
+    margin-bottom: 5vh;
+    padding-top: .5vh;
+    filter: drop-shadow(5px 5px rgba(0, 0, 0, 0.5));
+    text-shadow: 0 3px black;
+}
+/* ---------------------------------BOT DOC------------------------------------------------- */
+
+#footer_bar
+{
+    background-image: url(../Ressources/loadscreen_bottommunge_tile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position-y: %; */
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    bottom: -5vh;
+}

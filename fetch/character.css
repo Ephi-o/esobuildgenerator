@@ -1,0 +1,192 @@
+/* //*!SECTION-Factions */
+
+#img_daggerfall, #img_ebonheart, #img_aldmeri
+{
+    max-width:135px;
+    max-height:214px;
+    width: auto;
+    height: auto;
+}
+#factions
+{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw;
+    text-align: center;
+    top: 15vh;
+    left: -1vw;
+    height: 21vh;
+}
+#factions.reduce, #races.reduce, #mundus.reduce, #classes.reduce, #health.reduce, #stamina.reduce, #magicka.reduce
+{
+    display: none;
+}
+
+/* //*!SECTION-Races */
+
+#races
+{
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw;
+    grid-template-rows: 5vh 5vh 5vh 5vh;
+    list-style: none;
+    row-gap: 3vh;
+    text-align: center;
+    position: absolute;
+    top: 45vh;
+    left: -1vw;
+}
+#breton, #orc, #redguard
+{grid-column: 1;}
+#high_elf, #wood_elf, #khajiit 
+{grid-column: 3;}
+#argonien, #dark_elf, #nord, #imperial
+{grid-column: 2;}
+#breton, #high_elf, #argonian
+{grid-row: 1;}
+#orc, #wood_elf, #dark_elf
+{grid-row: 2}
+#redguard, #khajiit, #nord
+{grid-row: 3;}
+#imperial
+{grid-row: 4;}
+
+/* //*!SECTION-Classes */
+
+#classes
+{
+    position: absolute;
+display: grid;
+grid-template-columns: 7.5vw 7.5vw 7.5vw;
+grid-template-rows: 5vh 5vh;
+row-gap: 3vh;
+list-style: none;
+top: 42.5vh;
+left: 35vw;
+}
+
+#necromancer, #dragonknight, #nightblade
+{grid-row: 1;}
+#sorcerer, #templar, #warden
+{grid-row: 2;}
+
+/* //*!SECTION-Mundus */
+
+
+#mundus
+{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 5vw 5vw 5vw 5vw 5vw;
+    grid-template-rows: 5vh 5vh 5vh;
+    row-gap: 3vh;
+    position: absolute;    
+    text-align: center;
+    justify-content: end;
+    top: 15vh;
+    left: 31.5vw;
+}
+#thief, #tower, #warrior
+{left: 5vw;
+    position: relative;}
+#mundus li img
+{
+    border-image: url("../../Ressources/HuD/abilityframe64_up.png") 30/50% 50%/2px;
+}
+
+/* //*!SECTION-Attributs */
+
+#health, #stamina, #magicka
+{
+    top: 71vh;
+    left: 32.5vw;
+    position: absolute;
+}
+#health
+{
+    left: 39vw;
+    top: 65vh;
+}
+#stamina
+{
+    left: 46.5vw;
+}
+#img_health, #img_stamina, #img_magicka
+{
+    width: 208.5px;
+    height: 21px;
+}
+
+#magicka, #health, #stamina
+{
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 2.5vh 5vh;
+}
+#img_magicka, #img_health, #img_stamina
+{
+    grid-row: 1;
+    text-align: center;
+    grid-column: span 3;
+}
+#number_magicka, #number_stam, #number_health
+{
+    color: var(--text);
+    font-family: ESO;
+    font-size: 2.5vh;
+    grid-row: 2;
+    grid-column: 2;
+    text-align: center;
+}
+#plus_magicka, #plus_stam, #plus_health
+{
+    justify-self: end;
+}
+/* //*!SECTION-Closes */
+
+#close_factions, #close_races, #close_mundus, #close_classes, #close_attributs
+{
+    font-family: ESO;
+    color: var(--text);
+    position: absolute;
+}
+
+#close_factions, #close_mundus
+{
+    top: 10vh;
+}
+#close_races, #close_classes
+{
+    top: 39vh;
+}
+#close_classes, #close_mundus, #close_attributs
+{
+    left: 32.5vw;
+}
+#close_attributs
+{
+    top: 60vh;
+}
+#close_factions::after, #close_races::after, #close_mundus::after, #close_classes::after, #close_attributs::after
+{
+    content: url(../../Ressources/chat_scrollbar_downarrow_up.png);
+    position: relative;
+    top : .5vh;
+    left : .5vw;
+}
+
+#close_factions.reduit::after, #close_races.reduit::after, #close_mundus.reduit::after, #close_classes.reduit::after, #close_attributs.reduit::after
+{
+    content: url(../../Ressources/chat_scrollbar_uparrow_up.png);
+    position: relative;
+    top : .5vh;
+    left : .5vw;
+}
+
+/* //*!SECTION-Functions */
+
+.unselected
+{
+    filter: grayscale(100%);
+    opacity: 0.35;
+}

@@ -1,0 +1,54 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#skills-selection
+{
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 15vw;
+    left : -2.5vw; top: 12.5vh ; bottom: 0 ;
+    position: relative;
+}
+#skills-selection ul
+{
+    position: relative;
+    list-style: none;    
+    /* background-color: red; */
+    width: 15vw;
+    height: 5vh;
+    font-family: ESO;
+    font-size: 2.5vh;
+    color: var(--text);
+    padding-top: .5vh;
+    filter: drop-shadow(5px 5px rgba(0, 0, 0, 0.5));
+    text-shadow: 0 3px black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+#skills-selection ul li
+{
+    color: red;
+    font-size: 1.5vh;
+    text-align: start;
+}
+/* #skills-classe
+{margin-bottom: 3vh;}
+#skills-arms
+{margin-bottom: 3vh;}
+#skills-armors
+{margin-bottom: 3vh;}
+#skills-monde
+{margin-bottom: 3vh;}
+#skills-pvp
+{margin-bottom: 3vh;}
+#skills-guilde
+{margin-bottom: 3vh;}
+#skills-race
+{margin-bottom: 3vh;}
+#skills-artisanat
+{margin-bottom: 3vh;} */
